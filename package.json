@@ -1,0 +1,26 @@
+{
+  "name": "nft-preview-card-component",
+  "private": true,
+  "version": "1.0.0",
+  "description": "This is a solution to the NFT preview card component challenge on Frontend Mentor",
+  "author": "Csaba Molnar (DocForLoop)",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "sass": "^1.89.2",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.0"
+  }
+}
