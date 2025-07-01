@@ -1,1 +1,37 @@
 @use './functions' as *;
+
+@font-face {
+  font-display: swap;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  src: url('@/assets/fonts/outfit-v14-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  src: url('@/assets/fonts/outfit-v14-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  src: url('@/assets/fonts/outfit-v14-latin-600.woff2') format('woff2');
+}
+
+:root {
+  --ff-primary: 'Outfit', 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  --fs-h2: #{rem(22)};
+  --fs-desc: #{rem(18)};
+  --fs-body: #{rem(16)};
+  --fw-1: 300;
+  --fw-2: 400;
+  --fw-3: 600;
+  --lh-primary: 1.25;
+  --lh-secondary: 1.45;
+}
