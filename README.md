@@ -20,7 +20,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Links
 
-- [Solution on Frontend Mentor](https://www.frontendmentor.io/)
+- [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/nft-card-component-with-flex--hq6NjL9d_)
 - [Live Site on Vercel](https://nft-preview-card-component-seven-cyan.vercel.app/)
 
 ## My process
