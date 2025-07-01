@@ -1,1 +1,52 @@
 @use '@scss/global/functions' as *;
+
+.home-page {
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    &__figure {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    &__overlay {
+        display: grid;
+        place-items: center;
+    }
+
+    &__caption {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+    &__details {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+    }
+    
+    &__time {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+    }
+
+    &__creator {
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+    }
+}

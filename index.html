@@ -25,50 +25,65 @@
 
     <script type="module" src="/src/main.ts"></script>
   </head>
-  <body>
-    <main>
-      <h1>NFT cards</h1>
 
-      <section aria-labelledby="equilibrium-3429">
-        <figure>
-          <img src="/src/assets/images/image-equilibrium.jpg" 
-                alt="Colorful cube balanced on its edge" width="302" height="302">
+  <body class="home-page">
+    <main class="main">
+      <h1 class="sr-only">NFT cards</h1>
 
-          <div>
-            <img src="/src/assets/images/icon-view.svg" 
-                  alt="" width="48" height="48">
+      <section class="card" aria-labelledby="equilibrium-3429">
+        <figure class="card__figure">
+          <div class="card__img-container">
+            <img class="card__img" src="/src/assets/images/image-equilibrium.jpg" 
+                  alt="Colorful cube balanced on its edge" width="302" height="302">
+                  
+            <div class="card__overlay">
+              <img class="card__overlay-icon" src="/src/assets/images/icon-view.svg" 
+                    alt="" width="48" height="48">
+            </div>
           </div>
 
-          <figcaption>
-            <h2 id="equilibrium-3429">
-              <a href="#">Equilibrium #3429</a>
+
+          <figcaption class="card__caption">
+            <h2 class="card__title" id="equilibrium-3429">
+              <a class="card__title-link" href="#">Equilibrium #3429</a>
             </h2>
-            <p>Our Equilibrium collection promotes balance and calm.</p>
+
+            <p class="card__desc">Our Equilibrium collection promotes balance and calm.</p>
           </figcaption>
         </figure>
 
-        <div>
-          <div>
-            <img src="/src/assets/images/icon-ethereum.svg" 
+        <div class="card__details">
+          <div class="card__price">
+            <img class="card__icon--eth" src="/src/assets/images/icon-ethereum.svg" 
                   alt="" width="11" height="18">
-            <p>0.041 ETH</p>
+
+            <p class="card__value">0.041 ETH</p>
           </div>
 
-          <div>
-            <img src="/src/assets/images/icon-clock.svg" 
+          <div class="card__time">
+            <img class="card__icon--clock" src="/src/assets/images/icon-clock.svg" 
                   alt="" width="16" height="16">
-            <p>3 days left</p>
+
+            <p class="card__countdown">3 days left</p>
           </div>
         </div>
 
-        <hr>
+        <hr class="card__divider">
 
-        <div>
-          <img src="/src/assets/images/image-avatar.png" 
+        <div class="card__creator">
+          <img class="card__avatar" src="/src/assets/images/image-avatar.png" 
                 alt="" width="33" height="33">
-          <p>Creation of <a href="#">Jules Wyvern</a></p>
+
+          <p class="card__creator-name">Creation of <a class="card__creator-link" href="#">Jules Wyvern</a></p>
         </div>
       </section>
     </main>
+
+    <div class="attribution">
+        Challenge by 
+        <a class="attribution__link" href="https://www.frontendmentor.io/challenges" target="_blank" rel="noopener">Frontend Mentor</a>. 
+        Coded by 
+        <a class="attribution__link" href="https://www.frontendmentor.io/profile/DocForLoop" target="_blank" rel="noopener">Csaba Molnar</a>.
+    </div>
   </body>
 </html>

@@ -1,2 +1,161 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
+
+.home-page {
+    min-block-size: 100vh;
+    background-color: var(--clr-main-bg);
+    position: relative;
+}
+
+.sr-only {
+    @include m.sr-only;
+}
+
+.card {
+    background-color: var(--clr-card-bg);
+    border-radius: rem(15);
+    padding: 24px;
+    
+    &:hover {
+
+        .card__overlay {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .card__title-link, 
+        .card__creator-link {
+            color: var(--clr-secondary);
+        }
+    }
+
+    &:focus-within {
+
+        .card__overlay {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .card__title-link,
+        .card__creator-link {
+            color: var(--clr-secondary);
+        }
+    }
+        
+    &__img-container {
+        position: relative;
+        cursor: pointer;
+    }
+    
+    &__img {    
+        inline-size: 100%;
+        block-size: auto;
+        max-inline-size: rem(302);
+        border-radius: rem(8);
+    }
+    
+    &__overlay {
+        position: absolute;
+        border-radius: rem(8);
+        inset: 0;
+        background-color: var(--clr-secondary-overlay);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s;
+    }
+
+    &__overlay-icon {
+        inline-size: rem(48);
+        block-size: rem(48);
+    }
+
+    &__title {
+        font-size: var(--fs-h2);
+        font-weight: var(--fw-3);
+        line-height: var(--lh-primary);
+    }
+
+    &__title-link {
+        color: var(--clr-light);
+        display: inline-block;
+        border-radius: rem(3);
+        transition: color 0.3s;
+        
+        &:focus-visible {
+            color: var(--clr-secondary);
+            outline: rem(2) solid var(--clr-light);
+            outline-offset: rem(3);
+        }
+    }
+
+    &__desc {
+        font-size: var(--fs-desc);
+        font-weight: var(--fw-1);
+        max-inline-size: 24ch;
+    }
+
+    &__icon--eth {
+        inline-size: rem(11);
+        block-size: rem(18);
+    }
+
+    &__value {
+        color: var(--clr-secondary);
+        font-weight: var(--fw-3);
+    }
+
+    &__icon--clock {
+        inline-size: rem(16);
+        block-size: rem(16);
+    }
+
+    &__divider {
+        border: rem(1) solid var(--clr-decor-line);
+    }
+
+    &__avatar {
+        inline-size: rem(33);
+        block-size: rem(33);
+        border-radius: 50%;
+        outline: rem(2) solid var(--clr-light);
+    }
+
+    &__creator-link {
+        color: var(--clr-light);
+        display: inline-block;
+        border-radius: rem(3);
+        transition: color 0.3s;
+        
+        &:focus-visible {
+            color: var(--clr-secondary);
+            outline: rem(2) solid var(--clr-light);
+            outline-offset: rem(3);
+        }
+    }
+}
+
+.attribution {
+    position: absolute;
+    inset-block-end: 10px;
+    inset-inline: 0;
+    font-size: 12px;
+    text-align: center;
+    color: var(--clr-primary);
+}
+
+.attribution__link {
+    border-radius: rem(3);
+    color: var(--clr-primary);
+    text-decoration: underline;
+    transition: color 0.3s;
+
+    &:hover,
+    &:focus-visible {
+        color: var(--clr-secondary);
+    }
+
+    &:focus-visible {
+        outline: rem(2) solid var(--clr-light);
+        outline-offset: rem(2);
+    }
+}
